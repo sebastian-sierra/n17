@@ -1,0 +1,222 @@
+<?xml version="1.0"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+                         "http://java.sun.com/dtd/web-app_2_3.dtd">
+<!-- 
+Universidad de los Andes (Bogotá - Colombia)
+Departamento de Ingeniería de Sistemas y Computación 
+Licenciado bajo el esquema Academic Free License version 2.1 
+
+Proyecto Cupi2 (http://cupi2.uniandes.edu.co)
+Ejercicio: n17_queVideo
+Autor: Pablo Barvo - 05-Mayo-2006 
+-->
+<web-app>
+ <description>Servlet QueVideo</description>
+ <!-- SERVLETS -->
+ <servlet>
+  <servlet-name>IniciarSesionDeUsuario</servlet-name>
+  <servlet-class>servlets.ServletIniciarSesionDeUsuario</servlet-class>
+ </servlet>
+ 
+ <servlet>
+  <servlet-name>GuardarImagen</servlet-name>
+  <servlet-class>servlets.ServletGuardarImagen</servlet-class>
+ </servlet>
+ 
+ <servlet>
+  <servlet-name>VerPerfil</servlet-name>
+  <servlet-class>servlets.ServletVerPerfil</servlet-class>
+ </servlet>
+ 
+ <servlet>
+  <servlet-name>IrAInicio</servlet-name>
+  <servlet-class>servlets.ServletIrAInicio</servlet-class>
+ </servlet>
+ 
+ <servlet>
+  <servlet-name>CrearCuentaUsuario</servlet-name>
+  <servlet-class>servlets.ServletCrearCuentaUsuario</servlet-class>
+ </servlet>
+ 
+ <servlet>
+  <servlet-name>Imagen</servlet-name>
+  <servlet-class>servlets.ImageServlet</servlet-class>
+ </servlet>
+ 
+ <servlet>
+  <servlet-name>BuscarVideos</servlet-name>
+  <servlet-class>servlets.ServletBuscarVideos</servlet-class>
+ </servlet>
+ 
+ <servlet>
+  <servlet-name>BuscarUsuario</servlet-name>
+  <servlet-class>servlets.ServletBuscarUsuario</servlet-class>
+ </servlet>
+ 
+ <servlet>
+  <servlet-name>VerVideo</servlet-name>
+  <servlet-class>servlets.ServletVerVideo</servlet-class>
+ </servlet>
+ 
+ <servlet>
+  <servlet-name>MostrarInicioSesion</servlet-name>
+  <servlet-class>servlets.ServletMostrarInicioSesion</servlet-class>
+ </servlet>
+ 
+ <servlet>
+  <servlet-name>DarLike</servlet-name>
+  <servlet-class>servlets.ServletDarLike</servlet-class>
+ </servlet>
+ 
+ <servlet>
+  <servlet-name>ComentarVideo</servlet-name>
+  <servlet-class>servlets.ServletComentarVideo</servlet-class>
+ </servlet>
+ 
+ <servlet>
+  <servlet-name>CerrarSesion</servlet-name>
+  <servlet-class>servlets.ServletCerrarSesion</servlet-class>
+ </servlet>
+ 
+ <servlet>
+  <servlet-name>GuardarBusqueda</servlet-name>
+  <servlet-class>servlets.ServletGuardarBusqueda</servlet-class>
+ </servlet>
+ 
+ <servlet>
+  <servlet-name>VisitarPerfil</servlet-name>
+  <servlet-class>servlets.ServletVisitarPerfil</servlet-class>
+ </servlet>
+ 
+ <servlet>
+  <servlet-name>SeguirAVideoContaco</servlet-name>
+  <servlet-class>servlets.ServletSeguirAVideoContaco</servlet-class>
+ </servlet>
+ 
+ <servlet>
+  <servlet-name>AceptarUsuario</servlet-name>
+  <servlet-class>servlets.ServletAceptarUsuario</servlet-class>
+ </servlet>
+ 
+ <servlet>
+  <servlet-name>RechazarUsuario</servlet-name>
+  <servlet-class>servlets.ServletRechazarUsuario</servlet-class>
+ </servlet>
+ 
+ <servlet>
+  <servlet-name>DarCaminoIntermedio</servlet-name>
+  <servlet-class>servlets.ServletDarCaminoIntermedio</servlet-class>
+ </servlet>
+ 
+ <servlet>
+  <servlet-name>AgregarUsuariosDeNivel</servlet-name>
+  <servlet-class>servlets.ServletAgregarUsuariosDeNivel</servlet-class>
+ </servlet>
+ 
+ <!-- MAPPING -->
+ <servlet-mapping>
+  <servlet-name>IniciarSesionDeUsuario</servlet-name>
+  <url-pattern>/iniciarsesiondeusuario.html</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet-mapping>
+  <servlet-name>GuardarImagen</servlet-name>
+  <url-pattern>/guardarimagen.html</url-pattern>
+ </servlet-mapping> 
+ 
+ <servlet-mapping>
+  <servlet-name>VerPerfil</servlet-name>
+  <url-pattern>/verperfil.html</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet-mapping>
+  <servlet-name>IrAInicio</servlet-name>
+  <url-pattern>/inicio.html</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet-mapping>
+  <servlet-name>CrearCuentaUsuario</servlet-name>
+  <url-pattern>/crearcuentausuario.html</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet-mapping>
+  <servlet-name>Imagen</servlet-name>
+  <url-pattern>/imagen.html</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet-mapping>
+  <servlet-name>BuscarVideos</servlet-name>
+  <url-pattern>/buscarvideos.html</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet-mapping>
+  <servlet-name>BuscarUsuario</servlet-name>
+  <url-pattern>/buscarusuario.html</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet-mapping>
+  <servlet-name>VerVideo</servlet-name>
+  <url-pattern>/vervideo.html</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet-mapping>
+  <servlet-name>MostrarInicioSesion</servlet-name>
+  <url-pattern>/iniciarsesioncrearcuenta.html</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet-mapping>
+  <servlet-name>DarLike</servlet-name>
+  <url-pattern>/darlike.html</url-pattern>
+ </servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>ComentarVideo</servlet-name>
+  <url-pattern>/comentarvideo.html</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet-mapping>
+  <servlet-name>CerrarSesion</servlet-name>
+  <url-pattern>/cerrarsesion.html</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet-mapping>
+  <servlet-name>GuardarBusqueda</servlet-name>
+  <url-pattern>/guardarbusqueda.html</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet-mapping>
+  <servlet-name>VisitarPerfil</servlet-name>
+  <url-pattern>/visitarperfil.html</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet-mapping>
+  <servlet-name>SeguirAVideoContaco</servlet-name>
+  <url-pattern>/seguirAVideoContaco.html</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet-mapping>
+  <servlet-name>AceptarUsuario</servlet-name>
+  <url-pattern>/aceptarUsuario.html</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet-mapping>
+  <servlet-name>RechazarUsuario</servlet-name>
+  <url-pattern>/rechazarUsuario.html</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet-mapping>
+  <servlet-name>DarCaminoIntermedio</servlet-name>
+  <url-pattern>/darCaminoIntermedio.html</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet-mapping>
+  <servlet-name>AgregarUsuariosDeNivel</servlet-name>
+  <url-pattern>/agregarUsuariosDeNivel.html</url-pattern>
+ </servlet-mapping>
+ 
+ <login-config>
+  <auth-method>BASIC</auth-method>
+ </login-config>
+ 
+ 
+</web-app>
