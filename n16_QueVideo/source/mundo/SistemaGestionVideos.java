@@ -46,7 +46,7 @@ public class SistemaGestionVideos implements Serializable//, ISistemaGestionVide
 	/**
 	 * Constante para representar una busqueda por correo
 	 */
-	public static final String POR_NOMBRE= "pornombre";
+	public static final String POR_NOMBRE= "pornombremuychevere";
 	
 	/**
 	 * Constante para representar una busqueda por correo
